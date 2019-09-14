@@ -13,35 +13,36 @@ Three algorithm: Support Vector Machine (SVM), K-nearest neighbors (KNN) and Ran
 * select the features
   * I use Support Vector Machine (svc) from Python Scikit_Learn package to test the combinations of features to predict the planets. Here are list of scores for training and testing data
      * with all feature
-        Training Data Score: 0.8455082967766546
-        Testing Data Score: 0.8415331807780321
+        * Training Data Score: 0.8455082967766546
+        * Testing Data Score: 0.8415331807780321
     * without ‘ra', 'dec'
-        Training Data Score: 0.8464619492656876
-        Testing Data Score: 0.830091533180778
+        * Training Data Score: 0.8464619492656876
+        * Testing Data Score: 0.830091533180778
     * without all the err2 data
-        Training Data Score: 0.8413122258249094
-        Testing Data Score: 0.8409610983981693
+        * Training Data Score: 0.8413122258249094
+        * Testing Data Score: 0.8409610983981693
     * without all the err1 data
-         Training Data Score: 0.8361625023841313
-         Testing Data Score: 0.8283752860411899
+        * Training Data Score: 0.8361625023841313
+        * Testing Data Score: 0.8283752860411899
     * without all err1 and err2:
-         Training Data Score: 0.8167079916078581
-         Testing Data Score: 0.7946224256292906
+        * Training Data Score: 0.8167079916078581
+        * Testing Data Score: 0.7946224256292906
     * without 'koi_fpflag_nt', 'koi_fpflag_ss','koi_fpflag_co', 'koi_fpflag_ec'
-         Training Data Score: 0.6646957848559985
-         Testing Data Score: 0.664187643020595
+        * Training Data Score: 0.6646957848559985
+        * Testing Data Score: 0.664187643020595
+        
     I decided to take all the err2 data out since they barely affect the scores
 
 * Results for three algorithms after refined by grid-search
   * Support Vector Machine:
-    Training Data Score: 0.8842265878313943
-    Testing Data Score: 0.8804347826086957
+    * Training Data Score: 0.8842265878313943
+    * Testing Data Score: 0.8804347826086957
   * K-nearest neighbors:
-    Training Data Score: 0.8743086019454511
-    Testing Data Score: 0.8106407322654462
+    * Training Data Score: 0.8743086019454511
+    * Testing Data Score: 0.8106407322654462
   * Random Forest:
-    Training Data Score: 1.0
-    Testing Data Score: 0.9021739130434783
+    * Training Data Score: 1.0
+    * Testing Data Score: 0.9021739130434783
 
 
 
