@@ -35,14 +35,46 @@ Three algorithm: Support Vector Machine (SVM), K-nearest neighbors (KNN) and Ran
 
 * Results for three algorithms after refined by grid-search
   * Support Vector Machine:
-    * Training Data Score: 0.8842265878313943
-    * Testing Data Score: 0.8804347826086957
+    * grid search test
+      * 'C': [1, 5, 10, 50]
+      * 'gamma': [0.0001, 0.0005, 0.001, 0.005]
+    * best parameter: 'C': 50, 'gamma': 0.0001
+    * Results: 
+      * Training Data Score: 0.8842265878313943
+      * Testing Data Score: 0.8804347826086957
+
   * K-nearest neighbors:
-    * Training Data Score: 0.8743086019454511
-    * Testing Data Score: 0.8106407322654462
+    * grid search test
+      * 'n_neighbors': [5, 10]
+      * "algorithm" : ['auto', 'kd_tree', 'brute'] 
+      * "leaf_size": [30, 40]}
+    * best parameter: 'algorithm': 'auto', 'leaf_size': 30, 'n_neighbors': 10
+    * Results: 
+      * Training Data Score: 0.8743086019454511
+      * Testing Data Score: 0.8106407322654462
+
   * Random Forest:
-    * Training Data Score: 1.0
-    * Testing Data Score: 0.9021739130434783
+    * grid search test :
+      * 'n_estimators': [100, 200, 500, 1000]
+      * 'min_samples_split': [2, 3, 4]
+      * "bootstrap": [True, False]
+      * "criterion": ["gini", "entropy"]    
+    * best parameter: 'bootstrap': False, 'criterion': 'entropy', 'min_samples_split': 2, 'n_estimators': 100
+    * Results: 
+      * Training Data Score: 1.0
+      * Testing Data Score: 0.9021739130434783
+
+* Files
+  * jupyter notebook:
+    * Support_vector_machine.ipynb
+    * K_nearest_neighbors.ipynb
+    * random_forest.ipynb
+
+  * final models:
+    * upport Vector Machine: svm.sav
+    * K-nearest neighbors: knn.sav
+    * Random Forest: random_forest.sav
+
 
 
 
